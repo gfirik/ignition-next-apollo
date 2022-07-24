@@ -37,12 +37,12 @@ export default function Navbar({ count }) {
           </Link>
         ) : (
           <>
-            <a href="/login" className="login-a">
-              Login
-            </a>
-            <a href="/signup" className="signup-a">
-              Sign Up
-            </a>
+            <Link href="/login">
+              <a className="login-a">Login</a>
+            </Link>
+            <Link href="/signup">
+              <a className="signup-a">Signup</a>
+            </Link>
           </>
         )}
       </div>
